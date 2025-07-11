@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NTHAWI YATHU  MOVEMENT</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nthawi Yathu Movement</title>
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome CSS CDN (this loads the icons!) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papazG/AbxA6i/jy1GlqIk84M5WGBx0lksuUP6GyzAGIX+brUASrhGlI0lA81RWbIg5YvRgobkG2b6Pf0VcCeA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+   <meta name="google-site-verification" content="4Kx6t8B2u9TprdMj8ADUVW6NcBEQcnkOaicPvpGQ5Ms" />
+</head>
+  ...
+  <!-- Your page content -->
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  <script>
+  let backToTopBtn = document.getElementById("backToTopBtn");
+
+  // Show button after scrolling down 300px
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top smoothly
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<!-- Character encoding -->
+<meta charset="UTF-8" />
+
+<!-- Responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+<!-- Page title (appears in browser tab & search results) -->
+<title>Nthawi Yathu Movement - Youth Empowerment in Malawi</title>
+
+<!-- Meta description (shown in search engine results) -->
+<meta name="description" content="Nthawi Yathu Movement empowers Malawian youth through mental health support, academic guidance, and spiritual development. Our Time. Our Voice. Our Change." />
+
+<!-- Keywords (optional but not heavily used by Google) -->
+<meta name="keywords" content="Nthawi Yathu, youth Malawi, mental health, academic support, youth empowerment, spiritual growth" />
+
+<!-- Author -->
+<meta name="author" content="Nthawi Yathu Movement Team" />
+
+<!-- Robots instruction for search engines -->
+<meta name="robots" content="index, follow" />
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.animated-section');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2, // Trigger when 20% visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Animate once only
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+<meta name="google-site-verification" content="4Kx6t8B2u9TprdMj8ADUVW6NcBEQcnkOaicPvpGQ5Ms" />
+  <script>
+  function searchSite() {
+    const input = document.getElementById("search-input").value.toLowerCase();
+    const sections = document.querySelectorAll("section[data-search]");
+
+    sections.forEach(section => {
+      const keywords = section.getAttribute("data-search").toLowerCase();
+      if (keywords.includes(input) || input === "") {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  }
+    
+    <section id="mental" data-search="mental health support emotions">
+  <h2>Mental Health Support</h2>
+  <p>Helping youth deal with stress, anxiety, and depression.</p>
+</section>
+
+<section id="academics" data-search="academic mentorship school success">
+  <h2>Academic Mentorship</h2>
+  <p>Study tips, peer guidance, and mentorship programs.</p>
+</section>
+
+</script>
+
+</body><
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑ Top</button>
+<script>
+  function searchNow() {
+    const input = document.getElementById("search-input").value.toLowerCase();
+    alert("You searched for: " + input);
+    // 🔧 You can make this redirect, filter, or search through content later.
+  }
+</script>
+
+<body><!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+  });
+</script>
+<!-- Open Graph for Facebook/WhatsApp -->
+<meta property="og:title" content="Nthawi Yathu Movement" />
+<meta property="og:description" content="Empowering youth in Malawi through mental health, education, and spirituality." />
+<meta property="og:image" content="https://i.ibb.co/Kp2rG0Pv/WIN-20250613-23-19-00-Pro.jpg" />
+<meta property="og:url" content="https://yourwebsite.com" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Nthawi Yathu Movement" />
+<meta name="twitter:description" content="Empowering youth in Malawi through mental health, education, and spirituality." />
+<meta name="twitter:image" content="https://i.ibb.co/Kp2rG0Pv/WIN-20250613-23-19-00-Pro.jpg" />
+<!-- Chat Icon -->
+<div class="chat-icon" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Nthawi Yathu Chat Support</div>
+  <div class="chat-body">
+    <p>Hello! How can we help you today?</p>
+  </div>
+  <div class="chat-footer">
+    <input type="text" placeholder="Type a message..." />
+    <button>Send</button>
+  </div>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/686ed57d2207ba1914c79570/1ivof3sp0';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.animated-section');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+  <div class="search-container">
+  <input type="text" placeholder="Search..." id="search-input">
+  <button onclick="searchNow()">
+    🔍
+  </button>
+</div>
+
+</body>
+
+  <header>
+     
+     <header>
+  <nav class="navbar">
+    <div class="logo">Nthawi Yathu</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#mental-health">Mental Health</a></li>
+      <li><a href="#youth-voices">Youth Voices</a></li>
+      <li><a href="#contact">Contact/Help</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Welcome Section -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Nthawi Yathu Movement</h1>
+    <h2>Our Time. Our Voice. Our Change.</h2>
+  </div>
+  <script>
+  function toggleChat() {
+    const chatBox = document.getElementById("chatBox");
+    chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
+  }
+</script><!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/686ed57d2207ba1914c79570/1ivof3sp0';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</section>
+
+  </header>
+
+ 
+
+  <section class="section highlights">
+    <div class="highlight-box">
+      <img src="https://via.placeholder.com/400x250/2c3e50/ffffff?text=Support+Youth" alt="Support Youth">
+      <div>
+        <h2>Building Stronger Youth</h2>
+        <p>We partner with local communities and institutions to empower youth through mentorship, wellness programs, and skill-building initiatives that prepare them for a better future.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Nthawi Yathu Movement is a youth-led organisation based in Malawi that empowers young people in mental health, academic growth, and spirituality.At Nthawi Yathu Movement, we work with young people across Malawi to support mental well-being, promote academic excellence, and nurture spiritual growth. Our activities include peer-led mental health support sessions, school outreach campaigns, youth dialogue circles, academic mentorship, and safe spaces where youths can share their challenges and ideas. We aim to build a generation that is mentally strong, spiritually grounded, and academically driven. Our time. Our voice. Our change.</p>
+  </section>
+
+  <section id="mission-vision-programs" class="section mission-vision-programs">
+    <div class="mvp-box">
+      <i class="fas fa-bullseye"></i>
+      <h3>Our Mission</h3>
+      <p>To provide a safe and empowering platform for youths to thrive mentally, spiritually, and academically.</p>
+    </div>
+    <div class="mvp-box">
+      <i class="fas fa-eye"></i>
+      <h3>Our Vision</h3>
+      <p>A resilient generation of Malawian youths equipped to lead with mental clarity, purpose, and passion.</p>
+    </div>
+    <div class="mvp-box">
+      <i class="fas fa-hands-helping"></i>
+      <h3>Our Programmes</h3>
+      <p>We run peer-to-peer mental health support, academic mentorship sessions, and faith-building workshops.</p>
+    </div>
+  </section>
+
+  <section id="mental-health" class="section">
+    <h2>Mental Health Support</h2>
+    <p>We provide mental health awareness, peer support, and access to professional help for youths in need.
+      
+      “Umoyo wathanzi wauzimu si chizolowezi cha ofooka, koma mphamvu yochira, kulankhula, komanso kuyima limodzi. Ku Nthawi Yathu Movement, tikukhulupirira kuti achinyamata onse ayenera kumva, kuthandizidwa, ndi kulimbikitsidwa. Simuli nokha — nkhani yanu ndi yofunika.”
+    </p>
+  </section>
+
+  <section id="youth-voices" class="section">
+    <h2>Youth Voices</h2>
+    <p>A space where young people share their experiences, challenges, and achievements to inspire others.</p>
+  </section>
+
+  <section id="gallery" class="section slider">
+    <h2>Our Activities</h2>
+    <div class="slider-container">
+      <div class="slide fade"><img src="https://via.placeholder.com/600x300/3498db/ffffff?text=Event+1" alt="Event 1"></div>
+      <div class="slide fade"><img src="https://via.placeholder.com/600x300/2ecc71/ffffff?text=Event+2" alt="Event 2"></div>
+      <div class="slide fade"><img src="https://via.placeholder.com/600x300/e67e22/ffffff?text=Event+3" alt="Event 3"></div>
+    </div>
+  </section><section id="join" class="section">
+  <h2>Join the Movement</h2>
+  <p>Are you passionate about youth, mental health, or education? Become a part of Nthawi Yathu Movement and be the change!</p>
+  <a href="#contact" class="btn">Get Involved</a>
+  <div class="testimonial active">
+    <p>"Nthawi Yathu changed my life. I feel seen and supported."</p>
+    <h4>- Stevie Kusimbwe , Student</h4>
+  </div>
+  <div class="testimonial">
+    <p>"I love the safe space and mental health resources they provide."</p>
+    <h4>- Elastone Mbewe, Youth Leader</h4>
+  </div>
+  <div class="testimonial">
+    <p>"Great platform for youths to grow academically and mentally."</p>
+    <h4>- Aubrey Kachijika, University Student</h4>
+  </div><script>
+  let testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+
+  function showTestimonial(i) {
+    testimonials[index].classList.remove('active');
+    index = (i + testimonials.length) % testimonials.length; // handle loop
+    testimonials[index].classList.add('active');
+  }
+
+  function showNextTestimonial() {
+    showTestimonial(index + 1);
+  }
+
+  function showPreviousTestimonial() {
+    showTestimonial(index - 1);
+  }
+</script>
+
+
+  <!-- Navigation Buttons -->
+  <div class="slider-buttons">
+    <button onclick="showPreviousTestimonial()">❮ Prev</button>
+    <button onclick="showNextTestimonial()">Next ❯</button>
+  </div>
+</div>
+
+</html>
+
+</section><section class="animated-section floating-effect" style="--delay: 0s;">
+  <h2>Academic Excellence</h2>
+  <p>Supporting youth to achieve their academic goals through resources and guidance.</p>
+</section>
+
+<section class="animated-section floating-effect" style="--delay: 0.5s;">
+  <h2>Mentorship Programs</h2>
+  <p>Connecting youths with mentors for personal and career growth.</p>
+</section>
+
+<section class="animated-section floating-effect" style="--delay: 1s;">
+  <h2>Faith Circle and Prayer & Reflection</h2>
+  <p>A safe space for spiritual growth, prayer, and reflection.</p>
+</section>
+
+  <section id="spirituality" class="section">
+  <h2>Faith & Spiritual Growth</h2>
+  <p>We create safe spaces where youths can explore their faith, grow spiritually, and find purpose. Join our weekly reflection circles and community prayer meetings.</p>
+</section>
+  <section id="spirituality" class="section two-column-section">
+  <div class="column box-brown">
+    <h2>🌿 Faith Circles</h2>
+    <p>We host open discussions on purpose, identity, and spiritual well-being for personal grounding.</p>
+  </div>
+  <div class="column box-blue">
+    <h2>💬 Prayer & Reflection</h2>
+    <p>Our community meets weekly to pray, reflect, and encourage each other in their spiritual walk.</p>
+  </div>
+</section>
+
+<section id="academics" class="section">
+  <h2>Academic Excellence</h2>
+  <ul>
+    <li>📘 Weekly study tips and academic resources</li>
+    <li>🎯 Peer-to-peer mentorship programs</li>
+    <li>🏅 Motivational talks from university students</li>
+  </ul>
+</section>
+<section id="events" class="section">
+  <h2>Events & Campaigns</h2>
+  <p>We run events that engage youth in mental health awareness, leadership, and academic empowerment.</p>
+  <ul>
+    <li>🧩 Mental Health School Tour – August 2025</li>
+    <li>🔥 “Speak Out” Youth Voices Summit – September 2025</li>
+    <li>💡 Vision Board Workshop – October 2025</li>
+  </ul>
+</section>
+<section id="newsletter" class="section">
+  <h2>Stay Connected</h2>
+  <p>Subscribe to receive updates on mental health resources, events, and success stories.</p>
+  <form class="vertical-form">
+    <label for="email">Email address</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<section id="academics" class="section two-column-section">
+  <div class="column box-blue">
+    <h2>🎓 Academic Excellence</h2>
+    <p>We equip youth with study strategies, exam prep skills, and time management tools to help them excel.</p>
+  </div>
+  <div class="column box-green">
+    <h2>🤝 Mentorship Programs</h2>
+    <p>Connect with university mentors and access guidance for your academic journey through our weekly sessions.</p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact / Help</h2>
+  <div class="contact-grid-combined">
+    
+    <!-- Left Column: Social Media -->
+    <div class="social-icons">
+      <h3>Follow Us</h3>
+      <p>Stay updated with our latest programs and stories:</p>
+      <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <form class="vertical-form" action="U289mXn7I" method="POST">
+      <label for="first-name">First name</label>
+      <input id="first-name" name="first-name" type="text" required />
+
+      <label for="last-name">Last name</label>
+      <input id="last-name" name="last-name" type="text" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" cols="15" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    
+  </div>
+</section>
+
+   
+
+
+  <section id="testimonials" class="section">
+  <h2>What Youth Are Saying</h2>
+  <blockquote>“Nthawi Yathu helped me open up about my mental health. I no longer feel alone.” – Chikondi, 19</blockquote>
+  <blockquote>“The academic mentorship I got changed my life.” – Aisha, 17</blockquote>
+</section> <section style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Slideshow container -->
+  <div class="slideshow">
+    <img src="https://i.ibb.co/Gvhg5jQ7/IMG-20250705-WA0102.jpg" class="slide active">
+    <img src="https://i.ibb.co/svRkXBgd/Whats-App-Image-2025-06-26-at-03-43-28-c6bbf71f.jpg" class="slide">
+    <img src="https://i.ibb.co/7xKCTs5H/IMG-20250705-WA0058-1.jpg" class="slide">
+  </div>
+
+  <!-- Overlay text -->
+  <div class="overlay-text">
+    <h2>Partner with us today</h2>
+    <p>Let's make Malawi a better space for our youths.</p>
+  </div>
+
+  <style>
+    .slideshow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: translateY(100%);
+      animation: slideUp 15s infinite;
+    }
+
+    .slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+      animation-delay: 5s;
+    }
+
+    .slide:nth-child(3) {
+      animation-delay: 10s;
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      30% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      40% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+
+    .overlay-text {
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .overlay-text h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .overlay-text p {
+      font-size: 1.2rem;
+    }
+  </style>
+</section>
+
+<section class="quote-section">
+  <div class="quote-container">
+    <img src="https://i.ibb.co/Kp2rG0Pv/WIN-20250613-23-19-00-Pro.jpg" alt="Quote Author">
+    <blockquote>
+      "When we choose to uplift the youth, we rewrite the future with hope, courage, and purpose."
+    </blockquote>
+    <p class="quote-author">– Desire Mboma</p>
+  </div>
+</section><body>
+  <!-- other content -->
+
+  <!-- Contact section here -->
+  <section id="contact" style="padding: 2rem; background-color: #f0f8ff; border-radius: 10px; max-width: 600px; margin: 2rem auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #007acc;">Get in Touch</h2>
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">
+      📧 Email: <a href="mailto:contact@nthawiyathu.org" style="color: #0096FF;">contact@nthawiyathu.org</a><br>
+      📞 Phone: <a href="tel:+265991234567" style="color: #0096FF;">+265 89485985</a>
+    </p>
+  </section>
+
+  <!-- more content -->
+</body>
+
+
+  <footer>
+    <p>&copy; 2025 Nthawi Yathu Movement. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const showSlides = () => {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    };
+    window.onload = showSlides;
+  </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
