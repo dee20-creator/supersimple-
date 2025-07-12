@@ -1,4 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NTHAWI YATHU  MOVEMENT</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
@@ -117,6 +127,7 @@
 </section>
 
 </script>
+ 
 
 </body><
 <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑ Top</button>
@@ -127,6 +138,8 @@
     // 🔧 You can make this redirect, filter, or search through content later.
   }
 </script>
+ 
+
 
 <body><!-- Preloader -->
 <div id="preloader">
@@ -210,23 +223,36 @@ s0.parentNode.insertBefore(s1,s0);
     🔍
   </button>
 </div>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+ 
 
 </body>
 
   <header>
      
      <header>
-  <nav class="navbar">
-    <div class="logo">Nthawi Yathu</div>
-    <div class="menu-toggle" id="menuToggle">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#mental-health">Mental Health</a></li>
-      <li><a href="#youth-voices">Youth Voices</a></li>
-      <li><a href="#contact">Contact/Help</a></li>
-    </ul>
-  </nav>
+   <nav class="navbar">
+  <div class="logo">Nthawi Yathu </div>
+  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
+  
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About us</a></li>
+    <li><a href="#services"> Our Services</a></li>
+    <li><a href="#contact">Contact Us </a></li>
+    <li><a href="#Mental Health">Mental Health</a></li>
+    <li><a href="#Partner"> Partner  With Us</a></li>
+  </ul>
+</nav>
+
 </header>
 
 <!-- Welcome Section -->
@@ -306,13 +332,29 @@ s0.parentNode.insertBefore(s1,s0);
     <p>A space where young people share their experiences, challenges, and achievements to inspire others.</p>
   </section>
 
-  <section id="gallery" class="section slider">
-    <h2>Our Activities</h2>
-    <div class="slider-container">
-      <div class="slide fade"><img src="https://via.placeholder.com/600x300/3498db/ffffff?text=Event+1" alt="Event 1"></div>
-      <div class="slide fade"><img src="https://via.placeholder.com/600x300/2ecc71/ffffff?text=Event+2" alt="Event 2"></div>
-      <div class="slide fade"><img src="https://via.placeholder.com/600x300/e67e22/ffffff?text=Event+3" alt="Event 3"></div>
+    <section id="our-activities" class="section">
+  <h2>Our Activities</h2>
+  <div class="activities-container">
+
+    <div class="activity">
+      <img src="https://i.ibb.co/YFSjP5x3/Whats-App-Image-2025-07-05-at-08-45-10-352582e7.jpg" alt="Youth Event at Assemblies of God Church">
+      <p><strong>Assemblies of God Church Youth Tour:</strong> A powerful outreach event filled with inspiring discussions on mental health, purpose, and personal growth. Youths were engaged, empowered, and encouraged to speak out.</p>
     </div>
+
+    <div class="activity">
+      <img src="https://i.ibb.co/DDSsNMCL/IMG-20250705-WA0114.jpg" alt="Youth Mental Health Awareness Flyer">
+      <p><strong> The Youth Circle:</strong> On 5 July, we had a powerful Youth Circle discussion on how we can reduce stigma around mental health. We also shared some real stories and opened up about the struggles young people are facing.
+
+It was honest. It was deep. It was healing.
+
+Let’s keep creating spaces where we can talk, support each other, and grow together. 💬❤️</p>
+    </div>
+
+  </div>
+</section>
+</section>
+
+</section>
   </section><section id="join" class="section">
   <h2>Join the Movement</h2>
   <p>Are you passionate about youth, mental health, or education? Become a part of Nthawi Yathu Movement and be the change!</p>
@@ -403,16 +445,34 @@ s0.parentNode.insertBefore(s1,s0);
     <li>🔥 “Speak Out” Youth Voices Summit – September 2025</li>
     <li>💡 Vision Board Workshop – October 2025</li>
   </ul>
-</section>
-<section id="newsletter" class="section">
+ <section id="newsletter" class="section">
   <h2>Stay Connected</h2>
   <p>Subscribe to receive updates on mental health resources, events, and success stories.</p>
-  <form class="vertical-form">
+  <form class="vertical-form" id="newsletter-form">
     <label for="email">Email address</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="user_email" required>
     <button type="submit">Subscribe</button>
   </form>
 </section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("q3eLJa5l1-QX8mPqM"); // Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_dnwz7ar', 'template_10wse67', this)
+      .then(function(response) {
+        alert("Thanks for subscribing! Check your email for confirmation.");
+      }, function(error) {
+        alert("Oops! Something went wrong. Try again later.");
+      });
+  });
+</script>
+
 
 <section id="academics" class="section two-column-section">
   <div class="column box-blue">
@@ -425,45 +485,27 @@ s0.parentNode.insertBefore(s1,s0);
   </div>
 </section>
 
-<section id="contact" class="section contact">
-  <h2>Contact / Help</h2>
-  <div class="contact-grid-combined">
-    
-    <!-- Left Column: Social Media -->
-    <div class="social-icons">
-      <h3>Follow Us</h3>
-      <p>Stay updated with our latest programs and stories:</p>
-      <a href="https://facebook.com" target="_blank">
-        <i class="fab fa-facebook-f"></i> Facebook
-      </a><br>
-      <a href="https://twitter.com" target="_blank">
-        <i class="fab fa-twitter"></i> Twitter
-      </a><br>
-      <a href="https://instagram.com" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-    </div>
+ <section id="contact" class="section contact" style="padding: 2rem;">
+  <h2 style="text-align: center; color: #007acc;">Get in Touch</h2>
+  <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">
+    📧 Email: <a href="mailto:contact@nthawiyathu.org" style="color: #0096FF;">nthawiy@gmail.com</a><br>
+    📞 Phone: <a href="tel:+265894859485" style="color: #0096FF;">+265 894859485</a>
+  </p>
+  <form class="vertical-form" action="#" method="POST">
+    <label for="first-name">First Name</label>
+    <input id="first-name" name="first-name" type="text" required />
 
-    <!-- Right Column: Contact Form -->
-    <form class="vertical-form" action="U289mXn7I" method="POST">
-      <label for="first-name">First name</label>
-      <input id="first-name" name="first-name" type="text" required />
+    <label for="last-name">Last Name</label>
+    <input id="last-name" name="last-name" type="text" required />
 
-      <label for="last-name">Last name</label>
-      <input id="last-name" name="last-name" type="text" required />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" cols="15" rows="5" required></textarea>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" cols="15" rows="5" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-    
-  </div>
+    <button type="submit">Submit</button>
+  </form>
 </section>
-
-   
-
-
+  
+  
   <section id="testimonials" class="section">
   <h2>What Youth Are Saying</h2>
   <blockquote>“Nthawi Yathu helped me open up about my mental health. I no longer feel alone.” – Chikondi, 19</blockquote>
@@ -476,111 +518,52 @@ s0.parentNode.insertBefore(s1,s0);
     <img src="https://i.ibb.co/7xKCTs5H/IMG-20250705-WA0058-1.jpg" class="slide">
   </div>
 
+  
   <!-- Overlay text -->
-  <div class="overlay-text">
-    <h2>Partner with us today</h2>
-    <p>Let's make Malawi a better space for our youths.</p>
+   <section id="partner" class="partner-section">
+  <div class="partner-overlay">
+    <h2 class="partner-title">Partner With Us</h2>
+    <p class="partner-description">
+      Join us in empowering youth across Malawi. Your support helps us expand our programs and reach more lives.
+    </p>
+    <a href="#contact" class="partner-button">Get Involved</a>
   </div>
-
-  <style>
-    .slideshow {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transform: translateY(100%);
-      animation: slideUp 15s infinite;
-    }
-
-    .slide:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .slide:nth-child(2) {
-      animation-delay: 5s;
-    }
-
-    .slide:nth-child(3) {
-      animation-delay: 10s;
-    }
-
-    @keyframes slideUp {
-      0% {
-        opacity: 0;
-        transform: translateY(100%);
-      }
-      10% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      30% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      40% {
-        opacity: 0;
-        transform: translateY(-100%);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-100%);
-      }
-    }
-
-    .overlay-text {
-      position: absolute;
-      z-index: 10;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    .overlay-text h2 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    .overlay-text p {
-      font-size: 1.2rem;
-    }
-  </style>
 </section>
 
-<section class="quote-section">
-  <div class="quote-container">
-    <img src="https://i.ibb.co/Kp2rG0Pv/WIN-20250613-23-19-00-Pro.jpg" alt="Quote Author">
-    <blockquote>
-      "When we choose to uplift the youth, we rewrite the future with hope, courage, and purpose."
+</section>
+ <section class="quote-spotlight-section">
+  <div class="quote-spotlight-container">
+    <div class="quote-image">
+      <img src="https://i.ibb.co/YFSjP5x3/Whats-App-Image-2025-07-05-at-08-45-10-352582e7.jpg" alt="Desire Mboma">
+    </div>
+    <blockquote class="quote-text">
+      <p>"When we choose to uplift the youth, we rewrite the future with hope, courage, and purpose."</p>
+      <cite>– Desire Mboma</cite>
     </blockquote>
-    <p class="quote-author">– Desire Mboma</p>
   </div>
-</section><body>
+</section>
+<body>
   <!-- other content -->
-
-  <!-- Contact section here -->
-  <section id="contact" style="padding: 2rem; background-color: #f0f8ff; border-radius: 10px; max-width: 600px; margin: 2rem auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h2 style="text-align: center; color: #007acc;">Get in Touch</h2>
-    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">
-      📧 Email: <a href="mailto:contact@nthawiyathu.org" style="color: #0096FF;">contact@nthawiyathu.org</a><br>
-      📞 Phone: <a href="tel:+265991234567" style="color: #0096FF;">+265 89485985</a>
-    </p>
-  </section>
+ <section id="social-media-follow" class="follow-us-section">
+  <h2>Follow Us</h2>
+  <div class="social-icons-container">
+    <a href="https://facebook.com" class="social-icon facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i><span>Facebook</span>
+    </a>
+    <a href="https://linkedin.com" class="social-icon linkedin" target="_blank">
+      <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+    </a>
+    <a href="https://instagram.com" class="social-icon instagram" target="_blank">
+      <i class="fab fa-instagram"></i><span>Instagram</span>
+    </a>
+    <a href="https://twitter.com" class="social-icon twitter" target="_blank">
+      <i class="fab fa-twitter"></i><span>Twitter</span>
+    </a>
+    <a href="mailto:info@nthawiyathu.org" class="social-icon email">
+      <i class="fas fa-envelope"></i><span>Email</span>
+    </a>
+  </div>
+</section>
 
   <!-- more content -->
 </body>
@@ -604,5 +587,19 @@ s0.parentNode.insertBefore(s1,s0);
     };
     window.onload = showSlides;
   </script>
+</body>
+</html><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("active");
+    });
+  });
+</script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
